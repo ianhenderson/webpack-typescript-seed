@@ -3,11 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>hi there!</title>
+        <script src="systemjs/dist/system.js" charset="utf-8"></script>
+        <script src="cool.js"></script>
     </head>
     <body>
         <h1>Hello World!</h1>
         <p>
             Here is the awesome text. :)
         </p>
+        <script type="text/javascript">
+            System
+                .import('client/client')
+                .then(null, console.error.bind(console));
+        </script>
     </body>
 </html>

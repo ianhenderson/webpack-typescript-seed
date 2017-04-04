@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server/server.js",
     "clean": "find src -name '*.js' | xargs rm",
+    "build": "tsc -p src/server -p src/client",
     "ts": "tsc --pretty",
     "ts:w": "tsc -w --pretty"
   },
@@ -14,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
+    "systemjs": "^0.20.11",
     "typescript": "^2.2.1"
   }
 }
