@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server/server.js",
     "clean": "find src -name '*.js' | xargs rm",
-    "ts": "tsc",
-    "ts:w": "tsc -w"
+    "ts": "tsc --pretty",
+    "ts:w": "tsc -w --pretty"
   },
   "author": "",
   "license": "ISC",

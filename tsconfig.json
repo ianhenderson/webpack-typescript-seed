@@ -1,9 +1,10 @@
 {
     "compilerOptions": {
-        "compileOnSave": true
+        "compileOnSave": true,
+        "outFile": "./build/cool.js",
+        "module": "system"
     },
     "exclude": [
-        "node_modules",
         "**/*_test.ts"
     ]
 }
