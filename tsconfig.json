@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
+        "compileOnSave": true
     },
     "exclude": [
         "node_modules",
-        "**/*.spec.ts"
+        "**/*_test.ts"
     ]
 }
