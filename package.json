@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon build/server.js",
-    "clean": "find build/ src/ -name '*.js' | xargs rm",
+    "clean": "find build src -name '*.js' -o -name '*.map' | xargs rm",
     "ts": "tsc --pretty",
     "ts:w": "tsc -w --pretty",
     "build:ts": "tsc -p src/server -p src/client",
