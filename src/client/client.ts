@@ -1,6 +1,6 @@
 import { name, age } from './ian'
-import { BaseData, Entity } from '../shared/shared'
-import { PC_COMMANDS, COMMAND_TYPES } from '../shared/config'
+import { BaseData, Entity } from 'src/shared/shared'
+import { PC_COMMANDS, COMMAND_TYPES } from 'src/shared/config'
 
 
 export function init(): void {
@@ -14,8 +14,6 @@ function commander(arg: PC_COMMANDS): COMMAND_TYPES {
 		case PC_COMMANDS.CLEAR_RENDER_QUEUE:
 		case PC_COMMANDS.CLEAR_PITCHES: {
 			return 23;
-			break
 		}
-		return 34
 	}
 }
