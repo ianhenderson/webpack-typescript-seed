@@ -1,10 +1,1 @@
-{
-    "compileOnSave": true,
-    "compilerOptions": {
-        "outFile": "./dist/cool.js",
-        "module": "system"
-    },
-    "exclude": [
-        "**/*_test.ts"
-    ]
-}
+{}

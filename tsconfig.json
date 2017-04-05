@@ -1,1 +1,11 @@
-{}
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+    	"sourceMap": true,
+    	"inlineSources": true
+    },
+    "exclude": [
+        "node_modules",
+        "**/*_test.ts"
+    ]
+}

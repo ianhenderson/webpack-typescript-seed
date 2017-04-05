@@ -5,17 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server/server.js",
-    "clean": "find src -name '*.js' | xargs rm",
-    "build": "tsc -p src/server -p src/client",
+    "dev": "nodemon build/server.js",
+    "clean": "find build/ src/ -name '*.js' | xargs rm",
     "ts": "tsc --pretty",
-    "ts:w": "tsc -w --pretty"
+    "ts:w": "tsc -w --pretty",
+    "build:ts": "tsc -p src/server -p src/client",
+    "build:wp": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
     "systemjs": "^0.20.11",
-    "typescript": "^2.2.1"
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.1",
+    "webpack": "^2.3.3"
   }
 }
