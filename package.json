@@ -15,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
     "express": "^4.15.2",
     "express-es6-template-engine": "^1.1.1",
     "systemjs": "^0.20.11",

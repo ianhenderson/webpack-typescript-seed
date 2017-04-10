@@ -4,23 +4,21 @@ import * as es6Renderer from 'express-es6-template-engine'
 
 // Internal deps
 import router from './routes'
+import middleware from './middleware'
 
 declare var __dirname
 const app = express()
 
-// Set up template engine
-app.engine('html', es6Renderer)
-app.set('views', 'src/server/views')
-app.set('view engine', 'html');
+// Apply middleware
+middleware(app)
 
 // Apply routes
 app.use('/ui', router)
 
+// Main index
 app.get('/', function (req, res) {
   res.render('index', {
-    locals: {
-      date: new Date()
-    },
+    locals: {},
     partials: {}
   })
 })

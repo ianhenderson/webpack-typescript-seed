@@ -1,0 +1,16 @@
+<table class="table table-sm table-hover table-bordered">
+        <thead>
+                <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                </tr>
+        </thead>
+        <tbody>
+                ${ Object.keys(data).map(d => `
+                <tr>
+                        <td>${d}</td>
+                        <td>${data[d]}</td>
+                </tr>
+                `).join('') }
+        </tbody>
+</table>

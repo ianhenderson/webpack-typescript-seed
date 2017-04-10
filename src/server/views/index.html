@@ -3,9 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>hi there!</title>
+
+        <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+        <!-- Intercooler.js -->
         <script src="https://intercoolerreleases-leaddynocom.netdna-ssl.com/intercooler-1.1.1.min.js"></script>
-        <script src="bundle.js"></script>
         <style type="text/css">
             form > * {
                 display: block;
@@ -16,7 +24,6 @@
     <body>
 
         <h1>Header Here</h1>
-        <h1>${date}</h1>
         <h2>Sample Form</h2>
         <!-- <form method="post"> -->
         <form ic-post-to="/ui/form_demo" ic-target="#output">
