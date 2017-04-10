@@ -10,7 +10,6 @@ export default function(app) {
         // Set up template engine
         app.engine('html', es6Renderer)
         app.set('views', 'src/server/views')
-        app.set('view engine', 'html')
 
         // POST body parsing
         app.use( bodyParser.json() )

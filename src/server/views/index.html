@@ -18,54 +18,75 @@
             form > * {
                 display: block;
             }
+            .flex-1 {
+                flex: 1;
+            }
 
         </style>
     </head>
     <body>
 
-        <h1>Header Here</h1>
-        <h2>Sample Form</h2>
-        <!-- <form method="post"> -->
-        <form ic-post-to="/ui/form_demo" ic-target="#output">
+        <!--Center Content Row -->
+        <div class="d-flex">
+            <!-- Left Sidebar -->
+            <div class="card">
+                <div class="card-block">
+                    <h5 class="card-title"> Quick Actions </h5>
+                    <button class="btn btn-secondary btn-block">Click</button>
+                    <button class="btn btn-secondary btn-block">Click</button>
+                    <button class="btn btn-secondary btn-block">Click</button>
+                    <button class="btn btn-secondary btn-block">Click</button>
+                    <button class="btn btn-secondary btn-block">Click</button>
+                </div>
+            </div>
 
-            <!-- Name -->
-            <label>
-                Your Name:
-                <input type="text" name="your_name">
-            </label>
+            <!-- Main Content -->
+            <div class="card flex-1">
+                <div class="card-block">
+                    <h5 class="card-title"> Main Content </h5>
+                    <!--<h2>Sample Form</h2>-->
+                    <!-- <form method="post"> -->
+                    <form ic-post-to="/ui/form_demo" ic-target="#output">
 
-            <!-- Age -->
-            <label>
-                Your Age:
-                <input type="number" name="your_age">
-            </label>
+                        <!-- Name -->
+                        <label>
+                            Your Name:
+                            <input type="text" name="your_name">
+                        </label>
 
-            <!-- Gender -->
-            <label>
-                Gender:
-                <label>
-                    Male
-                    <input type="radio" name="your_gender" value="male">
-                </label>
-                <label>
-                    Female
-                    <input type="radio" name="your_gender" value="female">
-                </label>
-            </label>
+                        <!-- Age -->
+                        <label>
+                            Your Age:
+                            <input type="number" name="your_age">
+                        </label>
 
-            <input type="submit" name="Submit">
-        </form>
+                        <!-- Gender -->
+                        <label>
+                            Gender:
+                            <label>
+                                Male
+                                <input type="radio" name="your_gender" value="male">
+                            </label>
+                            <label>
+                                Female
+                                <input type="radio" name="your_gender" value="female">
+                            </label>
+                        </label>
 
-        <!-- output goes here -->
-        <div>
-            Here is the output:
+                        <input type="submit" name="Submit">
+                    </form>
+
+                    <!-- output goes here -->
+                    <div>
+                        Here is the output:
+                    </div>
+                    <div id="output">
+                        To be replaced...
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="output">
-            To be replaced...
-        </div>
 
-        <script type="text/javascript">
-            TestLib.init();
-        </script>
+
     </body>
 </html>

@@ -17,7 +17,7 @@ app.use('/ui', router)
 
 // Main index
 app.get('/', function (req, res) {
-  res.render('index', {
+  res.render('index.html', {
     locals: {},
     partials: {}
   })

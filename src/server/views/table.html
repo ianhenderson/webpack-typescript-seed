@@ -6,11 +6,19 @@
                 </tr>
         </thead>
         <tbody>
+                ${ data.map(d => `
+                <tr>
+                        <td>${d.key}</td>
+                        <td>${d.val}</td>
+                </tr>
+                `).join('') }
+        </tbody>
+        <!--<tbody>
                 ${ Object.keys(data).map(d => `
                 <tr>
                         <td>${d}</td>
                         <td>${data[d]}</td>
                 </tr>
                 `).join('') }
-        </tbody>
+        </tbody>-->
 </table>
