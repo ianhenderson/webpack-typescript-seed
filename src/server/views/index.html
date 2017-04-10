@@ -3,13 +3,60 @@
     <head>
         <meta charset="utf-8">
         <title>hi there!</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://intercoolerreleases-leaddynocom.netdna-ssl.com/intercooler-1.1.1.min.js"></script>
         <script src="bundle.js"></script>
+        <style type="text/css">
+            form > * {
+                display: block;
+            }
+
+        </style>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>
-            Here is the awesome text. :)
-        </p>
+
+        <h1>Header Here</h1>
+        <h1>${date}</h1>
+        <h2>Sample Form</h2>
+        <!-- <form method="post"> -->
+        <form ic-post-to="/ui/form_demo" ic-target="#output">
+
+            <!-- Name -->
+            <label>
+                Your Name:
+                <input type="text" name="your_name">
+            </label>
+
+            <!-- Age -->
+            <label>
+                Your Age:
+                <input type="number" name="your_age">
+            </label>
+
+            <!-- Gender -->
+            <label>
+                Gender:
+                <label>
+                    Male
+                    <input type="radio" name="your_gender" value="male">
+                </label>
+                <label>
+                    Female
+                    <input type="radio" name="your_gender" value="female">
+                </label>
+            </label>
+
+            <input type="submit" name="Submit">
+        </form>
+
+        <!-- output goes here -->
+        <div>
+            Here is the output:
+        </div>
+        <div id="output">
+            To be replaced...
+        </div>
+
         <script type="text/javascript">
             TestLib.init();
         </script>
