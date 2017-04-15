@@ -3,3 +3,4 @@ build/**/*
 src/**/*.js
 **/*.map
 .DS_Store
+.vscode

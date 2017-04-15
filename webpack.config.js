@@ -7,6 +7,7 @@ const commonConfig = {
         library: 'TestLib',
         libraryTarget: 'umd',
     },
+    devtool: 'source-map',
     resolve: {
         extensions: [ '.ts', '.tsx', '.js'],
         alias: {
@@ -36,9 +37,7 @@ const commonConfig = {
     },
 }
 
-const clientConfig = Object.assign(
-    {},
-    commonConfig,
+const clientConfig = Object.assign( {}, commonConfig,
     {
         entry: {
             bundle: __dirname + '/src/client/client.ts',
@@ -46,9 +45,7 @@ const clientConfig = Object.assign(
     }
 )
 
-const serverConfig = Object.assign(
-    {},
-    commonConfig,
+const serverConfig = Object.assign( {}, commonConfig,
     {
         entry: {
             server: __dirname + '/src/server/server.ts',
